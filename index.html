@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <meta name="author" content="Fernando Lamas" />
+   <meta name="description" content="Responsive Website" />
+
+   <!-- Bootstrap CSS Or Another CSS framework Or Comment Out -->
+   <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+
+   <!-- Custom Styles -->
+   <link rel="stylesheet" href="./css/styles.css" />
+
+   <!-- Google fonts (https://fonts.google.com) Or Comment out -->
+   <link
+      href="https://fonts.googleapis.com/css2?family=Caladea&family=Ewert&family=Josefin+Sans:ital,wght@1,300;1,400&family=Montserrat+Alternates:ital,wght@0,400;1,600&family=Vesper+Libre&display=swap"
+      rel="stylesheet">
+
+   <!-- Ionic icons Or Other Sites Icons Or Comment out -->
+   <!-- <link rel="stylesheet" href="" /> -->
+
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="./favicon.ico" />
+
+   <!-- FontAwesome or other JavaScript Files -->
+   <!-- <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script> -->
+   <!-- <script defer src=""></script> -->
+
+   <title>Company WebSite</title>
+</head>
+
+<body>
+   <header>
+   </header>
+
+   <main>
+      <section>
+      </section>
+
+      <section>
+         <article></article>
+         <aside></aside>
+      </section>
+   </main>
+
+   <footer></footer>
+
+   <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+
+         // Get all "navbar-burger" elements
+         const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+         // Check if there are any navbar burgers
+         if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+               el.addEventListener('click', () => {
+
+                  // Get the target from the "data-target" attribute
+                  const target = el.dataset.target;
+                  const $target = document.getElementById(target);
+
+                  // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                  el.classList.toggle('is-active');
+                  $target.classList.toggle('is-active');
+
+               });
+            });
+         }
+
+      });
+   </script>
+
+</body>
+
+</html>
