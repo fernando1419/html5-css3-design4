@@ -12741,4 +12741,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   height: 500px;
   background-size: cover;
 }
+
+#services .service-buttons {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=styles.css.map */
