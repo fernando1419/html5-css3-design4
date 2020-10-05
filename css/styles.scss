@@ -4,3 +4,9 @@
 //  Import sass partials
 @import "variables";
 @import "generic_classes";
+
+#hero {
+   background: url("../images/macbook-air.jpg");
+   height: 500px;
+   background-size: cover;
+}
