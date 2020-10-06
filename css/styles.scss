@@ -14,3 +14,19 @@
 #services .service-buttons {
    justify-content: center;
 }
+
+#contact {
+   background: url('../images/contact-us.jpg');
+   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+
+   #contact .quotes p,
+   #contact .quotes span {
+      font-size: 1.5rem !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      text-align: center !important;
+   }
+}
