@@ -12,23 +12,33 @@
 
 </br>
 
-- ### One way is without using Docker (easiest way)
+- ### One way is without using Docker (easiest way):
 
-  > (a) Go into the cloned directory.  
-  > (b) Open the index.html in your preferred browser.
+   </br>
+   
+  #### (a) Go into the cloned directory.
 
-</br>
+   </br>
 
-- ### The other way is using a Docker nginx container
+  #### (b) Open the index.html in your preferred browser.
 
-  > (a) Build the Docker Image for the HTML Server. Running the following commands:
+   </br>
+   </br>
+
+- ### The other way is using a Docker nginx container following these steps:
+
+   </br>
+
+  #### (a) Build the Docker Image for the HTML Server. Running the following commands:
 
   ```bash
    $ cd <project-directory>
    $ docker build -t nginx-html-server-image:v1 .
   ```
 
-  > (b) You can confirm that this has worked by running this command:
+   </br>
+
+  #### (b) You can confirm that this has worked by running this command:
 
   ```bash
   $ docker images
@@ -39,13 +49,17 @@
   ...
   ```
 
-  > (c) Run the following command to create and run the nginx server container:
+   </br>
+
+  #### (c) Run the following command to create and run the nginx server container:
 
   ```bash
    $ docker run --name nginx-webserver -d -p 8080:80 nginx-html-server-image:v1
   ```
 
-  > (d) Test the port 8080 using cURL by running the following command to ensure nginx is running:
+   </br>
+
+  #### (d) Test the port 8080 using cURL by running the following command to ensure nginx is running:
 
   ```bash
   $ curl -I localhost:8080
@@ -62,4 +76,6 @@
   Accept-Ranges: bytes
   ```
 
-  > (e) If everything went well, you should now see the site up and running by typing localhost:8080 in your browser.
+   </br>
+
+  #### (e) If everything went well, you should now see the site up and running by typing localhost:8080 in your browser.
