@@ -4,11 +4,11 @@
 
 </br>
 
-### 1) Clone the repo
+### (1) Clone the repo
 
 </br>
 
-### 2) There are two ways for running this project
+### (2) There are two ways for running this project
 
 </br>
 
@@ -19,16 +19,16 @@
 
 </br>
 
-- ### The other way is using a nginx Docker container
+- ### The other way is using a Docker nginx container
 
-  > (a) Build the Docker Image for the HTML Server. Run the following commands:
+  > (a) Build the Docker Image for the HTML Server. Running the following commands:
 
   ```bash
    $ cd <project-directory>
    $ docker build -t nginx-html-server-image:v1 .
   ```
 
-  > (b) You can confirm that this has worked by running the command:
+  > (b) You can confirm that this has worked by running this command:
 
   ```bash
   $ docker images
@@ -39,13 +39,13 @@
   ...
   ```
 
-  > (c) Run the following command to run the nginx HTML container server:
+  > (c) Run the following command to create and run the nginx server container:
 
   ```bash
    $ docker run --name nginx-webserver -d -p 8080:80 nginx-html-server-image:v1
   ```
 
-  > (d) Test the port 8080 using cURL running the following command to ensure nginx is running:
+  > (d) Test the port 8080 using cURL by running the following command to ensure nginx is running:
 
   ```bash
   $ curl -I localhost:8080
@@ -62,4 +62,4 @@
   Accept-Ranges: bytes
   ```
 
-  > You can also view this site in your preferred browser by going to localhost:8080.
+  > (e) If everything went well, you should now see the site up and running by typing localhost:8080 in your browser.
